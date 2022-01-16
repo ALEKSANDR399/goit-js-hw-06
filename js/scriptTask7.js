@@ -1,10 +1,10 @@
-const inputText = document.querySelector('#font-size-control');
-const mainText = document.querySelector('#text');
+// const inputText = document.querySelector('#font-size-control');
+// const mainText = document.querySelector('#text');
 
-inputText.addEventListener('input', changeText);
+// inputText.addEventListener('input', changeText);
 
-function changeText(event) {
+// function changeText(event) {
   
-  mainText.style.fontSize = String(event.currentTarget.value) + "px";
+//   mainText.style.fontSize = String(event.currentTarget.value) + "px";
  
-};
+// };
