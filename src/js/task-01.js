@@ -5,4 +5,3 @@ for (const element of category) {
 console.log(`Category : ${element.firstElementChild.textContent}
 Elements: ${element.lastElementChild.querySelectorAll('li').length}`);
 };
-

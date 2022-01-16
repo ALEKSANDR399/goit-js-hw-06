@@ -8,4 +8,3 @@ function auditInput(event) {
     : inputWindow.setAttribute('class', 'invalid');
  
 };
-
