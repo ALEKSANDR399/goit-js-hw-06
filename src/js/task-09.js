@@ -6,7 +6,7 @@ const btnChangeColor = document.querySelector('.change-color');
 btnChangeColor.addEventListener('click', () => {
   
   changeColorBox.parentNode.style.backgroundColor = getRandomHexColor();
-  nameRandomColor.textContent = getRandomHexColor();
+  nameRandomColor.textContent = changeColorBox.parentNode.style.backgroundColor;
 });
 
 function getRandomHexColor() {

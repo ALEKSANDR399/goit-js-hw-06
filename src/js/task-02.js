@@ -13,12 +13,14 @@ const ourListEl = document.querySelector('#ingredients');
 // console.log(itemCreate);
 // ourListEl.innerHTML = itemCreate;
 /**---------------------------2 способ---------------------------------------------- */
-let itemCreate = '';
+
+let colItemCreate = [];
 for (let i = 0; i < ingredients.length; i += 1) {
 
-    itemCreate = document.createElement('li');
+    const itemCreate = document.createElement('li');
     itemCreate.classList.add('item');
-    itemCreate.textContent = ingredients[i];
-    ourListEl.appendChild(itemCreate);
+  itemCreate.textContent = ingredients[i];
+  colItemCreate.push(itemCreate);
 }
-console.log(ourListEl);
+console.log(colItemCreate);
+ourListEl.append(...colItemCreate);

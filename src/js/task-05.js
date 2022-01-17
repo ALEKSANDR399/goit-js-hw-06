@@ -5,6 +5,15 @@ const rewriteText = {
 
 
 const rewriteTextInWindow = (event) => {
-  rewriteText.span.textContent = event.currentTarget.value;
+  event.preventDefault();
+  if (!event.currentTarget.value ) {
+    rewriteText.span.textContent = 'Anonymous';
+    return;
+  };
+  
+  rewriteText.span.textContent = event.currentTarget.value
+  
+  
+  
 };
 rewriteText.input.addEventListener('input', rewriteTextInWindow);
